@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #2563eb;    
+  --color-secondary: #10b981;  
+  --color-dark: #1e293b;      
+  
+  
+  --spacing-section: 5rem;
+}
+
+
+@layer base {
+  body {
+    
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight text-slate-900;
+  }
+}
