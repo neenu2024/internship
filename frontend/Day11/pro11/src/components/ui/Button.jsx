@@ -4,7 +4,7 @@ export const Button = ({ variant = 'primary', size = 'md', className = "", ...pr
   const baseStyles = "inline-flex items-center justify-center rounded-lg font-medium transition-all cursor-pointer";
   
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700",
+    primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-sm",
     secondary: "bg-emerald-500 text-white hover:bg-emerald-600",
     outline: "border-2 border-slate-200 text-slate-600 hover:bg-slate-50"
   };
@@ -16,9 +16,6 @@ export const Button = ({ variant = 'primary', size = 'md', className = "", ...pr
   };
 
   return (
-    <button 
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`} 
-      {...props} 
-    />
+    <button className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`} {...props} />
   );
 };
